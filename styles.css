@@ -8,10 +8,10 @@
   --panel: #101d31;
   --panel-2: #13233b;
   --panel-3: #192c47;
-  --text: #eef4ff;
+  --text: #d8e1ee;
   --muted: #9fb0c9;
   --accent: #82aaff;
-  --accent-2: #56e0c5;
+  --accent-2: #72c9b8;
   --line: rgba(130, 170, 255, 0.14);
   --shadow: 0 22px 60px rgba(0, 0, 0, 0.35);
   --radius: 24px;
@@ -574,6 +574,84 @@ img {
   gap: 14px;
 }
 
+.project-groups {
+  display: grid;
+  gap: 22px;
+}
+
+.project-group {
+  display: grid;
+  gap: 12px;
+}
+
+.project-group__header h3 {
+  margin: 0;
+  font-size: 1.22rem;
+  letter-spacing: -0.02em;
+}
+
+.project-group__header p {
+  margin: 6px 0 0;
+  color: var(--muted);
+}
+
+.work-project {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.03);
+  overflow: hidden;
+}
+
+.work-project__summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.work-project__summary::-webkit-details-marker {
+  display: none;
+}
+
+.work-project__title {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.work-project__meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.work-project__body {
+  padding: 0 16px 16px;
+  color: var(--muted);
+}
+
+.work-project__body p {
+  margin: 0 0 12px;
+}
+
+.project-grid--education {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.project-grid--education .project-card__body {
+  gap: 10px;
+}
+
+.project-grid--education .project-card h3 {
+  font-size: 1rem;
+}
+
+.project-grid--education .project-card p {
+  line-height: 1.7;
+}
+
 .project-card {
   overflow: hidden;
   background: var(--panel-2);
@@ -652,6 +730,11 @@ img {
   .hero__metrics,
   .sidebar {
     grid-template-columns: 1fr;
+  }
+
+  .work-project__summary {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .certification-card,
