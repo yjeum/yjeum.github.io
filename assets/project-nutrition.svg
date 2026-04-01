@@ -1,0 +1,14 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" rx="32" fill="#F3EEE6"/>
+  <rect x="64" y="64" width="1072" height="547" rx="30" fill="#FFFDF9"/>
+  <rect x="122" y="118" width="308" height="438" rx="28" fill="#E8EFEA"/>
+  <rect x="492" y="118" width="586" height="98" rx="24" fill="#1D5C63"/>
+  <rect x="492" y="250" width="586" height="42" rx="16" fill="#E9E0D2"/>
+  <rect x="492" y="320" width="586" height="42" rx="16" fill="#E9E0D2"/>
+  <rect x="492" y="390" width="586" height="42" rx="16" fill="#E9E0D2"/>
+  <rect x="492" y="460" width="280" height="96" rx="24" fill="#D6864D"/>
+  <rect x="798" y="460" width="280" height="96" rx="24" fill="#DCEFEF"/>
+  <circle cx="276" cy="236" r="82" fill="#D6864D"/>
+  <path d="M236 238C252 220 285 220 303 238C320 255 319 286 292 304C271 318 252 330 252 330C252 330 233 318 212 304C185 286 184 255 201 238C219 220 252 220 268 238Z" fill="#FFF7F2"/>
+  <text x="492" y="186" fill="#F9F6F0" font-size="40" font-family="Arial, sans-serif" font-weight="700">Nutrition Data Report</text>
+</svg>

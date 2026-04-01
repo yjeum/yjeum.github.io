@@ -1,0 +1,14 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" rx="32" fill="#F5EFE8"/>
+  <rect x="56" y="56" width="1088" height="563" rx="28" fill="#FFFDF9"/>
+  <rect x="120" y="126" width="252" height="408" rx="24" fill="#1D5C63"/>
+  <rect x="160" y="180" width="172" height="28" rx="14" fill="#E3F2F2"/>
+  <rect x="160" y="234" width="172" height="172" rx="22" fill="#D6864D"/>
+  <rect x="430" y="150" width="280" height="54" rx="18" fill="#E7F2F1"/>
+  <rect x="430" y="234" width="650" height="38" rx="19" fill="#E9E0D2"/>
+  <rect x="430" y="298" width="510" height="38" rx="19" fill="#E9E0D2"/>
+  <rect x="430" y="384" width="172" height="118" rx="24" fill="#DCEFEE"/>
+  <rect x="630" y="384" width="172" height="118" rx="24" fill="#F0D8C4"/>
+  <rect x="830" y="384" width="172" height="118" rx="24" fill="#E8EBF1"/>
+  <text x="430" y="118" fill="#1F2328" font-size="40" font-family="Arial, sans-serif" font-weight="700">Emo-Bank</text>
+</svg>

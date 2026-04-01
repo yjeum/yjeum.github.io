@@ -1,0 +1,16 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" rx="32" fill="#F7F2EA"/>
+  <rect x="70" y="70" width="1060" height="535" rx="30" fill="#FFFDF9"/>
+  <rect x="120" y="120" width="260" height="435" rx="28" fill="#1D5C63"/>
+  <circle cx="250" cy="238" r="68" fill="#DCEFEF"/>
+  <rect x="172" y="340" width="156" height="24" rx="12" fill="#DCEFEF"/>
+  <rect x="172" y="384" width="112" height="24" rx="12" fill="#DCEFEF"/>
+  <rect x="434" y="136" width="268" height="180" rx="26" fill="#E9E0D2"/>
+  <rect x="726" y="136" width="330" height="180" rx="26" fill="#D6864D"/>
+  <rect x="434" y="340" width="622" height="192" rx="26" fill="#F1F6F6"/>
+  <path d="M510 446C548 394 616 380 662 424C708 468 780 458 832 398" stroke="#1D5C63" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="510" cy="446" r="14" fill="#1D5C63"/>
+  <circle cx="662" cy="424" r="14" fill="#1D5C63"/>
+  <circle cx="832" cy="398" r="14" fill="#1D5C63"/>
+  <text x="434" y="585" fill="#1F2328" font-size="40" font-family="Arial, sans-serif" font-weight="700">WARP Movie Recommendation</text>
+</svg>
