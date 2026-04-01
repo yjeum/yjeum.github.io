@@ -329,6 +329,10 @@ img {
   letter-spacing: -0.05em;
 }
 
+.experience-section .section-heading h2 {
+  font-size: clamp(1.8rem, 2.8vw, 2.5rem);
+}
+
 .section-panel {
   margin-top: 18px;
   padding: 16px;
@@ -381,6 +385,84 @@ img {
   display: grid;
   grid-template-columns: 1fr;
   gap: 12px;
+}
+
+.career-timeline {
+  margin-top: 28px;
+  padding-left: 0;
+}
+
+.career-entry {
+  position: relative;
+}
+
+.career-entry__dot {
+  display: none;
+}
+
+.career-entry__content {
+  margin-left: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+}
+
+.career-entry__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.career-entry__top h3 {
+  margin: 0;
+  font-size: 1.45rem;
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+}
+
+.career-entry__role {
+  margin: 10px 0 0;
+  color: var(--accent);
+  font-size: 1.02rem;
+  font-weight: 700;
+}
+
+.career-entry__period {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.career-entry__body {
+  margin-top: 18px;
+}
+
+.career-entry__summary {
+  margin: 0 0 18px;
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.career-block h4 {
+  margin: 0 0 10px;
+  font-size: 1.18rem;
+  letter-spacing: -0.02em;
+}
+
+.career-list {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.career-list li {
+  margin-top: 9px;
+  line-height: 1.8;
 }
 
 .certification-layout {
@@ -579,6 +661,18 @@ img {
 
   .hero h1 {
     font-size: clamp(2.5rem, 8vw, 4rem);
+  }
+
+  .career-entry__content {
+    margin-left: 0;
+  }
+
+  .career-entry__top {
+    grid-template-columns: 1fr;
+  }
+
+  .career-entry__period {
+    white-space: normal;
   }
 }
 
