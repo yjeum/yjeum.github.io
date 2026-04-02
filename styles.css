@@ -584,6 +584,10 @@ img {
   gap: 12px;
 }
 
+.is-temporarily-hidden {
+  display: none;
+}
+
 .project-group__header h3 {
   margin: 0;
   font-size: 1.22rem;
