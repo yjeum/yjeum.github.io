@@ -88,7 +88,7 @@
               <div class="career-entry__top">
                 <div>
                   <h3>(주)비지언스</h3>
-                  <p class="career-entry__role">Backend Developer / MES & 스마트팩토리 개발</p>
+                  <p class="career-entry__role">Backend Developer / MES & 스마트팩토리 구축 및 고도화</p>
                 </div>
                 <p class="career-entry__period">2025.01 ~ 재직중</p>
               </div>
@@ -120,7 +120,6 @@
             <p class="eyebrow">Projects</p>
             <h2>프로젝트</h2>
           </div>
-          <span class="section-tag">실무 / 교육 프로젝트 분리</span>
         </div>
 
         <div class="project-groups">
@@ -131,10 +130,118 @@
 
             <details class="work-project" open>
               <summary class="work-project__summary">
-                <span class="work-project__title">스마트팩토리 MES 시스템 구축 및 고도화</span>
-                <span class="work-project__meta">비지언스 · 2025.01 ~ 재직중</span>
+                <span class="work-project__title">식품업 스마트팩토리 MES 시스템 구축</span>
+                <span class="work-project__meta">비지언스 · 2025.06 ~ 2025.12</span>
               </summary>
               <div class="work-project__body">
+                <article class="project-overview-card">
+                  <div class="project-overview-card__row">
+                    <span class="project-overview-card__label">기간</span>
+                    <p>2025.06 ~ 2025.12</p>
+                  </div>
+                  <div class="project-overview-card__row">
+                    <span class="project-overview-card__label">프로젝트 개요</span>
+                    <ul class="project-overview-card__list">
+                      <li>숙주 생산 공정의 영업-구매-생산-제조-품질-출하 전 과정을 하나의 MES로 통합 구축</li>
+                      <li>Excel 및 수기 중심으로 운영되던 공정을 데이터 흐름 기반으로 재설계</li>
+                      <li>RFID 기반으로 재배실 입출고, 생산, 품질, 출하 데이터를 실시간으로 수집 및 연동</li>
+                      <li>End-to-End 생산 이력 추적이 가능한 구조로 개선하여 Lot 단위 관리 및 공정 가시성 확보</li>
+                    </ul>
+                  </div>
+                  <div class="project-overview-card__row">
+                    <span class="project-overview-card__label">환경</span>
+                    <p>Java(Spring Boot), JavaScript(JQuery), MySQL, RestAPI, SSE</p>
+                  </div>
+                  <div class="project-overview-card__row">
+                    <span class="project-overview-card__label">담당</span>
+                    <p>Backend Developer (System Design & Data Flow)</p>
+                  </div>
+                </article>
+
+                <div class="project-story">
+                  <article class="project-story__item">
+                    <span class="project-story__badge">Case 1</span>
+                    <h4>식품 공정 특화 예외 처리 구조 설계</h4>
+                    <div class="project-story__section">
+                      <strong>문제 상황</strong>
+                      <ul class="project-story__list">
+                        <li>식품업 특성상 원자재 상태 변동이 잦아 반품 후 재입고, 혼합(Mixing), 재작업 등의 복잡한 예외 발생</li>
+                        <li>기존 시스템으로는 이러한 흐름을 반영하기 어려워 데이터 왜곡 발생</li>
+                      </ul>
+                    </div>
+                    <div class="project-story__answer">
+                      <strong>해결 방법</strong>
+                      <ul class="project-story__list">
+                        <li>반품 -> 재입고 -> 재투입 흐름을 하나의 상태 전이 구조로 설계</li>
+                        <li>Mixing 공정을 반영하여 여러 Lot이 하나의 공정으로 결합되는 구조 구현</li>
+                        <li>각 공정에서 발생하는 상태 변화를 데이터 단위로 관리</li>
+                      </ul>
+                    </div>
+                    <div class="project-story__result">
+                      <strong>성과</strong>
+                      <ul class="project-story__list">
+                        <li>복잡한 공정 흐름에서도 데이터 일관성 유지</li>
+                        <li>Lot 단위 추적 정확도 향상</li>
+                        <li>예외 상황 대응으로 실제 운영 환경에서 추가 수정 없이 안정적 사용</li>
+                      </ul>
+                    </div>
+                  </article>
+
+                  <article class="project-story__item">
+                    <span class="project-story__badge">Case 2</span>
+                    <h4>실시간 처리 구조 개선 (Polling -> SSE)</h4>
+                    <div class="project-story__section">
+                      <strong>문제 상황</strong>
+                      <ul class="project-story__list">
+                        <li>기존 폴링 방식으로 데이터를 조회하며 상태 반영 지연 및 불필요한 요청 발생</li>
+                        <li>공정 상태가 즉시 반영되지 않아 현장 대응 속도 저하</li>
+                      </ul>
+                    </div>
+                    <div class="project-story__answer">
+                      <strong>해결 방법</strong>
+                      <ul class="project-story__list">
+                        <li>폴링 구조를 제거하고 SSE(Server-Sent Events) 기반 실시간 이벤트 처리 구조로 전환</li>
+                        <li>RFID 이벤트 발생 시 서버에서 클라이언트로 즉시 데이터 전달하도록 설계</li>
+                      </ul>
+                    </div>
+                    <div class="project-story__result">
+                      <strong>성과</strong>
+                      <ul class="project-story__list">
+                        <li>상태 반영 시간 최대 수 초 -> 1초 이내로 단축</li>
+                        <li>불필요 요청 약 60% 감소 및 서버 부하 완화</li>
+                        <li>실시간 공정 모니터링 가능 -> 현장 대응 속도 향상</li>
+                      </ul>
+                    </div>
+                  </article>
+
+                  <article class="project-story__item">
+                    <span class="project-story__badge">Case 3</span>
+                    <h4>공정 단절 및 데이터 불일치 문제 해결</h4>
+                    <div class="project-story__section">
+                      <strong>문제 상황</strong>
+                      <ul class="project-story__list">
+                        <li>공정별 시스템이 분리되어 자재-생산-출하 간 데이터 단절 발생</li>
+                        <li>동일 데이터가 여러 번 입력되며 불일치 및 수동 보정 작업 발생</li>
+                      </ul>
+                    </div>
+                    <div class="project-story__answer">
+                      <strong>해결 방법</strong>
+                      <ul class="project-story__list">
+                        <li>자재-공정-완제품-출하까지 이어지는 End-to-End 데이터 흐름 구조 설계</li>
+                        <li>공정 단위 데이터를 기준으로 흐름을 재정의하고, 상태 변경이 자동으로 다음 공정에 반영되도록 설계</li>
+                      </ul>
+                    </div>
+                    <div class="project-story__result">
+                      <strong>성과</strong>
+                      <ul class="project-story__list">
+                        <li>데이터 불일치로 인한 수동 보정 작업 약 80% 이상 감소</li>
+                        <li>공정 간 데이터 단절 해소 -> 생산 이력 추적 가능</li>
+                        <li>초기 운영 안정화 기간 단축 및 추가 수정 요청 최소화</li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+
                 <p>
                   제조 공정 기반 MES 시스템을 개발 및 운영하며 데이터 흐름 설계, 구조 개선,
                   레거시 리팩토링, 고객사 맞춤형 시스템 구축을 수행했습니다.
@@ -222,7 +329,6 @@
             <p class="eyebrow">Education</p>
             <h2>교육</h2>
           </div>
-          <span class="section-tag">학습 및 성장 과정</span>
         </div>
         <div class="experience-grid">
           <article class="info-card">
