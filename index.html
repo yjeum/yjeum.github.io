@@ -168,7 +168,7 @@
                     <li>RFID 기반 실시간 처리 구조와 SSE 도입으로 상태 반영 시간 1초 이내로 단축</li>
                     <li>폴링 제거를 통해 불필요 요청 약 60% 감소, 서버 부하 안정화</li>
                     <li>End-to-End 데이터 흐름 설계를 통해 공정 간 데이터 단절 제거 및 생산 이력 추적 가능 구조 구축</li>
-                    <li>수작업 입력 및 데이터 불일치 문제를 해결하여 수동 보정 작업 약 30% 이상 감소</li>
+                    <li>수기기록 및 데이터 불일치 문제를 해결하여 수동 보정 작업 약 90% 이상 감소</li>
                     <li>사전 예외사항을 최대한 많이 찾아 적용하여 초기 적용 단계에서도 추가 수정 및 오류 발생을 최소화하며 운영 안정성 확보</li>
                   </ul>
                 </article>
@@ -216,14 +216,14 @@
                     <div class="project-story__answer">
                       <strong>해결 방법</strong>
                       <ul class="project-story__list">
-                        <li>폴링 구조를 제거하고 SSE(Server-Sent Events) 기반 실시간 이벤트 처리 구조로 전환</li>
+                        <li>폴링 구조를 제거하고 SSE 기반 실시간 이벤트 처리 구조로 전환</li>
                         <li>RFID 이벤트 발생 시 서버에서 클라이언트로 즉시 데이터 전달하도록 설계</li>
                       </ul>
                     </div>
                     <div class="project-story__result">
                       <strong>성과</strong>
                       <ul class="project-story__list">
-                        <li>상태 반영 시간 최대 수 초 -> 1초 이내로 단축</li>
+                        <li>상태 반영 시간 최대 1초 이내로 단축</li>
                         <li>불필요 요청 약 60% 감소 및 서버 부하 완화</li>
                         <li>실시간 공정 모니터링 가능 -> 현장 대응 속도 향상</li>
                       </ul>
@@ -237,7 +237,7 @@
                       <strong>문제 상황</strong>
                       <ul class="project-story__list">
                         <li>공정별 시스템이 분리되어 자재-생산-출하 간 데이터 단절 발생</li>
-                        <li>동일 데이터가 여러 번 입력되며 불일치 및 수동 보정 작업 발생</li>
+                        <li>동일 데이터가 여러 번 입력 또는 다중 수기 기록으로 인해 데이터 불일치 및 수동 보정 작업 발생</li>
                       </ul>
                     </div>
                     <div class="project-story__answer">
@@ -250,7 +250,7 @@
                     <div class="project-story__result">
                       <strong>성과</strong>
                       <ul class="project-story__list">
-                        <li>데이터 불일치로 인한 수동 보정 작업 약 80% 이상 감소</li>
+                        <li>데이터 불일치로 인한 수동 보정 작업 약 90% 이상 감소</li>
                         <li>공정 간 데이터 단절 해소 -> 생산 이력 추적 가능</li>
                         <li>초기 운영 안정화 기간 단축 및 추가 수정 요청 최소화</li>
                       </ul>
