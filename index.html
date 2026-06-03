@@ -6,458 +6,337 @@
   <title>포트폴리오 | 엄예진</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="#top">
-      <span class="brand__dot"></span>
-      <span>엄예진 · Backend Developer</span>
-    </a>
-    <nav class="topbar__nav">
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#certifications">Certification</a>
-      <a href="#skills">Skills</a>
-    </nav>
-  </header>
+  <div class="terminal-container">
+    <header class="terminal-header">
+      <div class="terminal-dots" aria-hidden="true">
+        <span class="terminal-dot red"></span>
+        <span class="terminal-dot yellow"></span>
+        <span class="terminal-dot green"></span>
+      </div>
+      <p class="terminal-title">yjeum.portfolio</p>
+    </header>
 
-  <main id="top" class="layout">
-    <aside class="sidebar">
-      <section class="sidebar__section sidebar__intro">
-        <div class="sidebar__photo">
-          <img src="assets/profile-photo.jpg" alt="엄예진 프로필 사진">
-        </div>
-        <p class="sidebar__name">엄예진</p>
-        <p class="sidebar__role">Backend Developer</p>
-        <p class="sidebar__text">
-          현장의 복잡한 요구를 구조화하고,
-          확장 가능한 시스템으로 연결하는 개발자입니다.
-        </p>
-      </section>
+    <div class="terminal-content">
+      <aside class="sidebar">
+        <nav class="side-nav" aria-label="Portfolio navigation">
+          <a href="#about" class="active"><span>&gt;</span> 소개</a>
+          <a href="#experience"><span>&gt;</span> 경력</a>
+          <a href="#projects"><span>&gt;</span> 프로젝트</a>
+          <a href="#education"><span>&gt;</span> 교육</a>
+          <a href="#certifications"><span>&gt;</span> 자격증</a>
+          <a href="#skills"><span>&gt;</span> 기술</a>
+        </nav>
+      </aside>
 
-      <nav class="sidebar__section sidebar__menu">
-        <p class="sidebar__label">Navigation</p>
-        <a href="#experience">경력</a>
-        <a href="#projects">프로젝트</a>
-        <a href="#education">교육</a>
-        <a href="#certifications">어학 및 자격증</a>
-        <a href="#skills">기술 스택</a>
-      </nav>
-    </aside>
-
-    <div class="content">
-      <section class="hero">
-        <p class="eyebrow">Backend Developer</p>
-        <h1>복잡함을 구조로 풀어냅니다</h1>
-        <p class="hero__lede">
-          제조 현장에서 데이터 수집과 정합성을 고려한 데이터 흐름 개선을 수행했습니다.<br>
-          프로젝트에서는 Java(Spring Boot)와 JavaScript(JQuery) 기반으로 전체 구조와 데이터 흐름을 설계했습니다.<br>
-          데이터 흐름과 구조를 기준으로 시스템을 설계하고, 확장성과 운영 효율까지 함께 고려하는 것을 중요하게 생각합니다.
-        </p>
-      </section>
-
-      <section class="section company-focus">
-        <div class="section-heading">
-          <p class="eyebrow">Position</p>
-          <h2>CJ올리브네트웍스</h2>
-        </div>
-        <div class="section-panel">
-          <ul class="bullet-list">
-            <li>지원 직무: Software Engineer (Backend)</li>
-            <li>제조 현장에서 MES를 구축하며 공정 흐름을 데이터로 구조화하고, <br>
-              End-to-End로 연결한 경험을 통해 CJ올리브네트웍스의 AX 기반 스마트 제조/물류 전환과 연결된 역량을 보유하고 있습니다.</li>
-            <li>입사 후 고객사의 다양한 공정과 데이터를 하나의 구조로 통합하고, <br>
-              확장 가능한 시스템을 설계하여 AX 전환을 실질적인 운영 효율 개선으로 이어지도록 기여하겠습니다.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="experience" class="section experience-section">
-        <div class="section-header">
-          <div class="section-heading">
-            <p class="eyebrow">Experience</p>
-            <h2>경력</h2>
-          </div>
-          <span class="section-tag">총 1년 3개월 · 2025.01 ~ 재직중</span>
-        </div>
-
-        <div class="career-timeline">
-          <article class="career-entry">
-            <div class="career-entry__content">
-              <div class="career-entry__top">
-                <div>
-                  <h3>(주)비지언스</h3>
-                  <p class="career-entry__role">Backend Developer / MES & 스마트팩토리 구축 및 고도화</p>
-                </div>
-                <p class="career-entry__period">2025.01 ~ 재직중</p>
-              </div>
-
-              <div class="career-entry__body">
-                <p class="career-entry__summary">
-                  스마트팩토리(MES) 시스템 개발 및 운영을 담당하며 <br>
-                  제조 공정 기반 데이터 흐름 설계, 시스템 구조 개선, 리팩토링, 고객사 맞춤형 시스템 구축을 수행하고 있습니다.
+      <div class="main-content">
+        <main class="shell">
+          <section id="about" class="hero-section portfolio-panel active" data-panel="about">
+            <div class="hero-content">
+              <div class="hero-text">
+                <p class="eyebrow">About</p>
+                <h1>업무 흐름을 데이터 구조로 연결합니다</h1>
+                <p class="hero-role">Backend Developer</p>
+                <p class="hero-description">
+                  제조 현장에서 생산, 재고, 품질, 영업, 출하 데이터가 이어지는 과정을 분석하고
+                  운영 환경에서 신뢰할 수 있는 백엔드 시스템으로 개선해왔습니다.
                 </p>
-
-                <div class="career-block">
-                  <h4>주요 업무</h4>
-                  <ul class="career-list">
-                    <li>스마트팩토리(MES) 시스템 개발 및 운영</li>
-                    <li>제조 공정 기반 데이터 흐름 설계 및 구조 개선</li>
-                    <li>레거시 시스템 분석 및 멀티테넌트 구조 설계를 통한 확장형 시스템 전환</li>
-                    <li>다양한 산업군(식품, 철강 등) 고객사 맞춤형 시스템 구축 및 운영 자동화</li>
-                  </ul>
+              </div>
+              <div class="hero-image">
+                <div class="hero-image-frame">
+                  <img src="assets/profile-photo.jpg" alt="엄예진 프로필 사진">
                 </div>
               </div>
+              <div class="about-points">
+                <article>
+                  <span>01</span>
+                  <strong>업무 흐름 이해</strong>
+                  <p>부서와 공정 사이에서 데이터가 어떻게 연결되는지 먼저 확인합니다.</p>
+                </article>
+                <article>
+                  <span>02</span>
+                  <strong>데이터 정합성</strong>
+                  <p>마감, 이력, Lot, 상태 변경이 운영 중에도 일관되게 남도록 설계합니다.</p>
+                </article>
+                <article>
+                  <span>03</span>
+                  <strong>운영 가능한 개선</strong>
+                  <p>현장 예외와 실제 사용 방식을 반영해 유지되는 구조를 만듭니다.</p>
+                </article>
+              </div>
             </div>
-          </article>
-        </div>
-      </section>
+          </section>
 
-      <section id="projects" class="section">
-        <div class="section-header">
-          <div class="section-heading">
-            <p class="eyebrow">Projects</p>
-            <h2>프로젝트</h2>
-          </div>
-        </div>
-
-        <div class="project-groups">
-          <div class="project-group">
-            <div class="project-group__header">
-              <h3>실무 프로젝트</h3>
-            </div>
-
-            <details class="work-project" open>
-              <summary class="work-project__summary">
-                <span class="work-project__title">식품업 스마트팩토리 MES 시스템 구축</span>
-                <span class="work-project__meta">비지언스 · 2025.06 ~ 2025.12</span>
-              </summary>
-              <div class="work-project__body">
-                <article class="project-overview-card">
-                  <div class="project-overview-card__row">
-                    <span class="project-overview-card__label">기간</span>
-                    <p>2025.06 ~ 2025.12</p>
+          <section id="experience" class="content-section portfolio-panel" data-panel="experience" hidden>
+            <h2 class="section-title">경력</h2>
+            <div class="section-content">
+              <article class="timeline-item">
+                <div class="timeline-header">
+                  <div>
+                    <h3>(주)비지언스</h3>
+                    <p class="position">Backend Developer / MES & 스마트팩토리 구축 및 고도화</p>
                   </div>
-                  <div class="project-overview-card__row">
-                    <span class="project-overview-card__label">프로젝트 개요</span>
-                    <ul class="project-overview-card__list">
-                      <li>숙주 생산 공정의 영업-구매-생산-제조-품질-출하 전 과정을 하나의 MES로 통합 구축</li>
-                      <li>Excel 및 수기 중심으로 운영되던 공정을 데이터 흐름 기반으로 재설계</li>
-                      <li>RFID 기반으로 재배실 입출고, 생산, 품질, 출하 데이터를 실시간으로 수집 및 연동</li>
-                      <li>End-to-End 생산 이력 추적이 가능한 구조로 개선하여 Lot 단위 관리 및 공정 가시성 확보</li>
+                  <span class="period">2025.01 ~ 재직중 · 총 1년 5개월</span>
+                </div>
+                <p class="description">
+                  MES 시스템 개발과 운영을 담당하며 생산, 재고, 품질, 영업, 출하로 이어지는
+                  업무 데이터 흐름 설계와 시스템 구조 개선을 수행하고 있습니다.
+                </p>
+                <ul class="detail-list">
+                  <li>MES 및 스마트팩토리 시스템 개발 및 운영</li>
+                  <li>월 마감 및 집계 구조 개선을 통한 조회 성능 최적화</li>
+                  <li>RFID 기반 생산 이력 관리와 예외 처리 구조 설계</li>
+                  <li>고객사별 업무 방식에 맞춘 LOT, 입고, 출하 로직 구현</li>
+                  <li>운영 환경에서 발생하는 데이터 정합성 문제 분석 및 개선</li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+          <section id="projects" class="content-section portfolio-panel" data-panel="projects" hidden>
+            <h2 class="section-title">프로젝트</h2>
+            <div class="section-content">
+              <div class="project-stack">
+                <article class="project-card project-card--open">
+                  <div class="project-body">
+                    <p class="project-kicker">Manufacturing Data</p>
+                    <h3>전자제품 제조 운영 데이터 고도화</h3>
+                    <p class="project-meta">비지언스 · 제조업 고도화</p>
+                    <p class="project-desc">
+                      생산, 재고, 영업, 품질, 출하 데이터 흐름을 개선하고 월 마감 기반 집계 구조를 정비했습니다.
+                    </p>
+                    <div class="impact-grid">
+                      <div><strong>6초+</strong><span>기존 조회 응답</span></div>
+                      <div><strong>1초 이내</strong><span>개선 후 응답</span></div>
+                      <div><strong>월 마감</strong><span>누적 재계산 제거</span></div>
+                    </div>
+                    <div class="case-grid">
+                      <article>
+                        <span>Case 1</span>
+                        <h4>월 마감 기반 집계 구조 개선</h4>
+                        <p>매 조회마다 과거 데이터를 다시 계산하던 구조를 월 단위 마감 데이터 기반으로 변경했습니다.</p>
+                      </article>
+                      <article>
+                        <span>Case 2</span>
+                        <h4>출하 지시와 실제 출하 분리</h4>
+                        <p>영업 업무 흐름은 유지하면서 품질 검사와 재고 이력 기준이 흔들리지 않도록 단계를 분리했습니다.</p>
+                      </article>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="project-card">
+                  <div class="project-body">
+                    <p class="project-kicker">MES / RFID</p>
+                    <h3>생산·재고·품질·출하 데이터 흐름 개선</h3>
+                    <p class="project-meta">비지언스 · 2025.06 ~ 2025.12</p>
+                    <p class="project-desc">
+                      식품 제조 공장의 영업, 구매, 생산, 품질, 출하 과정을 하나의 업무 흐름으로 연결했습니다.
+                    </p>
+                    <div class="project-tags">
+                      <span>Java</span>
+                      <span>Spring Boot</span>
+                      <span>MySQL</span>
+                      <span>REST API</span>
+                      <span>SSE</span>
+                      <span>RFID</span>
+                    </div>
+                    <ul class="detail-list compact">
+                      <li>RFID 이벤트와 SSE 도입으로 상태 반영 시간 1초 이내 단축</li>
+                      <li>폴링 제거로 불필요 요청 약 60% 감소</li>
+                      <li>수기 기록과 데이터 불일치로 인한 보정 작업 약 90% 이상 감소</li>
+                      <li>30건 이상의 현장 예외 시나리오를 반영해 운영 안정성 확보</li>
                     </ul>
                   </div>
-                  <div class="project-overview-card__row">
-                    <span class="project-overview-card__label">환경</span>
-                    <p>Java(Spring Boot), JavaScript(JQuery), MySQL, RestAPI, SSE</p>
-                  </div>
-                  <div class="project-overview-card__row">
-                    <span class="project-overview-card__label">담당</span>
-                    <p>Backend Developer (System Design & Data Flow)</p>
-                  </div>
                 </article>
-
-                <article class="project-highlight">
-                  <span class="project-highlight__label">Project Highlights</span>
-                  <ul class="project-highlight__list">
-                    <li>개발 기간 3개월 단축, 요구사항 구조화와 공정 흐름 재설계를 통해 개발 속도 개선</li>
-                    <li>시스템 사용률 100% 달성, 현장 작업자부터 사무직까지 실제 운영 환경에서 전면 사용</li>
-                    <li>RFID 기반 실시간 처리 구조와 SSE 도입으로 상태 반영 시간 1초 이내로 단축</li>
-                    <li>폴링 제거를 통해 불필요 요청 약 60% 감소, 서버 부하 안정화</li>
-                    <li>End-to-End 데이터 흐름 설계를 통해 공정 간 데이터 단절 제거 및 생산 이력 추적 가능 구조 구축</li>
-                    <li>수기기록 및 데이터 불일치 문제를 해결하여 수동 보정 작업 약 90% 이상 감소</li>
-                    <li>사전 예외사항을 최대한 많이 찾아 적용하여 초기 적용 단계에서도 추가 수정 및 오류 발생을 최소화하며 운영 안정성 확보</li>
-                  </ul>
-                </article>
-
-                <div class="project-story">
-                  <article class="project-story__item">
-                    <span class="project-story__badge">Case 1</span>
-                    <h4>식품 공정 특화 예외 처리 구조 설계</h4>
-                    <div class="project-story__section">
-                      <strong>문제 상황</strong>
-                      <ul class="project-story__list">
-                        <li>식품업 특성상 원자재 상태 변동이 잦아 반품 후 재입고, 혼합(Mixing), 재작업 등의 복잡한 예외 발생</li>
-                        <li>기존 시스템으로는 이러한 흐름을 반영하기 어려워 데이터 왜곡 발생</li>
-                      </ul>
-                    </div>
-                    <div class="project-story__answer">
-                      <strong>해결 방법</strong>
-                      <ul class="project-story__list">
-                        <li>반품 -> 재입고 -> 재투입 흐름을 하나의 상태 전이 구조로 설계</li>
-                        <li>Mixing 공정을 반영하여 여러 Lot이 하나의 공정으로 결합되는 구조 구현</li>
-                        <li>각 공정에서 발생하는 상태 변화를 데이터 단위로 관리</li>
-                      </ul>
-                    </div>
-                    <div class="project-story__result">
-                      <strong>성과</strong>
-                      <ul class="project-story__list">
-                        <li>복잡한 공정 흐름에서도 데이터 일관성 유지</li>
-                        <li>Lot 단위 추적 정확도 향상</li>
-                        <li>예외 상황 대응으로 실제 운영 환경에서 추가 수정 없이 안정적 사용</li>
-                        <li>사전 예외사항을 반영해 초기 적용 단계에서도 추가 수정 및 오류 발생을 최소화하며 운영 안정성 확보</li>
-                      </ul>
-                    </div>
-                  </article>
-
-                  <article class="project-story__item">
-                    <span class="project-story__badge">Case 2</span>
-                    <h4>실시간 처리 구조 개선 (Polling -> SSE)</h4>
-                    <div class="project-story__section">
-                      <strong>문제 상황</strong>
-                      <ul class="project-story__list">
-                        <li>기존 폴링 방식으로 데이터를 조회하며 상태 반영 지연 및 불필요한 요청 발생</li>
-                        <li>공정 상태가 즉시 반영되지 않아 현장 대응 속도 저하</li>
-                      </ul>
-                    </div>
-                    <div class="project-story__answer">
-                      <strong>해결 방법</strong>
-                      <ul class="project-story__list">
-                        <li>폴링 구조를 제거하고 SSE 기반 실시간 이벤트 처리 구조로 전환</li>
-                        <li>RFID 이벤트 발생 시 서버에서 클라이언트로 즉시 데이터 전달하도록 설계</li>
-                      </ul>
-                    </div>
-                    <div class="project-story__result">
-                      <strong>성과</strong>
-                      <ul class="project-story__list">
-                        <li>상태 반영 시간 최대 1초 이내로 단축</li>
-                        <li>불필요 요청 약 60% 감소 및 서버 부하 완화</li>
-                        <li>실시간 공정 모니터링 가능 -> 현장 대응 속도 향상</li>
-                      </ul>
-                    </div>
-                  </article>
-
-                  <article class="project-story__item">
-                    <span class="project-story__badge">Case 3</span>
-                    <h4>공정 단절 및 데이터 불일치 문제 해결</h4>
-                    <div class="project-story__section">
-                      <strong>문제 상황</strong>
-                      <ul class="project-story__list">
-                        <li>공정별 시스템이 분리되어 자재-생산-출하 간 데이터 단절 발생</li>
-                        <li>동일 데이터가 여러 번 입력 또는 다중 수기 기록으로 인해 데이터 불일치 및 수동 보정 작업 발생</li>
-                      </ul>
-                    </div>
-                    <div class="project-story__answer">
-                      <strong>해결 방법</strong>
-                      <ul class="project-story__list">
-                        <li>자재-공정-완제품-출하까지 이어지는 End-to-End 데이터 흐름 구조 설계</li>
-                        <li>공정 단위 데이터를 기준으로 흐름을 재정의하고, 상태 변경이 자동으로 다음 공정에 반영되도록 설계</li>
-                      </ul>
-                    </div>
-                    <div class="project-story__result">
-                      <strong>성과</strong>
-                      <ul class="project-story__list">
-                        <li>데이터 불일치로 인한 수동 보정 작업 약 90% 이상 감소</li>
-                        <li>공정 간 데이터 단절 해소 -> 생산 이력 추적 가능</li>
-                        <li>초기 운영 안정화 기간 단축 및 추가 수정 요청 최소화</li>
-                      </ul>
-                    </div>
-                  </article>
-                </div>
-
-                <p>
-                  제조 공정 기반 MES 시스템을 개발 및 운영하며 데이터 흐름 설계, 구조 개선,
-                  레거시 리팩토링, 고객사 맞춤형 시스템 구축을 수행했습니다.
-                </p>
-                <ul class="career-list">
-                  <li>스마트팩토리(MES) 시스템 개발 및 운영</li>
-                  <li>제조 공정 기반 데이터 흐름 설계 및 시스템 구조 개선</li>
-                  <li>레거시 시스템 분석 및 멀티테넌트 구조 설계를 통한 확장형 시스템 전환</li>
-                  <li>다양한 산업군 고객사 맞춤형 시스템 구축 및 운영 자동화</li>
-                </ul>
               </div>
-            </details>
-          </div>
-
-          <div class="project-group project-group--education is-temporarily-hidden">
-            <div class="project-group__header">
-              <h3>교육 프로젝트</h3>
-              <p>교육 과정에서 수행한 프로젝트를 카드로 한 번에 볼 수 있게 정리했습니다.</p>
             </div>
+          </section>
 
-            <div class="project-grid project-grid--education">
-              <article class="project-card">
-                <div class="project-card__image">
-                  <img src="assets/project-emobank.svg" alt="Emo-Bank 프로젝트 이미지">
-                </div>
-                <div class="project-card__body">
-                  <div class="project-card__top">
-                    <span class="info-card__label">교육 프로젝트</span>
-                    <span class="mini-tag">Java · Spring Boot · MySQL · Python</span>
+          <section id="education" class="content-section portfolio-panel" data-panel="education" hidden>
+            <h2 class="section-title">교육</h2>
+            <div class="section-content">
+              <article class="simple-card">
+                <div class="timeline-header">
+                  <div>
+                    <h3>삼성 청년 SW 아카데미 10기</h3>
+                    <p class="position">SSAFY</p>
                   </div>
-                  <h3>Emo-Bank</h3>
-                  <p>감정과 금융 기록을 연결해 상태 변화를 시각적으로 보여주는 서비스입니다.</p>
                 </div>
-              </article>
-
-              <article class="project-card">
-                <div class="project-card__image">
-                  <img src="assets/project-algonion.svg" alt="Algonion 프로젝트 이미지">
-                </div>
-                <div class="project-card__body">
-                  <div class="project-card__top">
-                    <span class="info-card__label">교육 프로젝트</span>
-                    <span class="mini-tag">Java · Spring Boot · JPA · MySQL</span>
-                  </div>
-                  <h3>Algonion</h3>
-                  <p>여러 온라인 저지 사이트의 풀이 현황을 통합 관리하는 서비스입니다.</p>
-                </div>
-              </article>
-
-              <article class="project-card">
-                <div class="project-card__image">
-                  <img src="assets/project-warp.svg" alt="WARP 프로젝트 이미지">
-                </div>
-                <div class="project-card__body">
-                  <div class="project-card__top">
-                    <span class="info-card__label">교육 프로젝트</span>
-                    <span class="mini-tag">Python · Django · SQLite</span>
-                  </div>
-                  <h3>WARP</h3>
-                  <p>사용자 취향 기반 영화 추천 서비스를 구현한 프로젝트입니다.</p>
-                </div>
-              </article>
-
-              <article class="project-card">
-                <div class="project-card__image">
-                  <img src="assets/project-nutrition.svg" alt="영양성분 데이터 조사 프로젝트 이미지">
-                </div>
-                <div class="project-card__body">
-                  <div class="project-card__top">
-                    <span class="info-card__label">교육/활동</span>
-                    <span class="mini-tag">데이터 수집 · 정제 · 리포트</span>
-                  </div>
-                  <h3>영양성분 데이터 조사</h3>
-                  <p>식품 영양성분 데이터를 수집하고 정리하며 공공 데이터 리포트 작성에 참여했습니다.</p>
-                </div>
+                <p class="description">
+                  Python, Django, Java, Spring Boot를 중심으로 백엔드 개발 역량을 쌓았고,
+                  팀 프로젝트 4건을 수행하며 협업 경험을 강화했습니다.
+                </p>
               </article>
             </div>
-          </div>
-        </div>
-      </section>
+          </section>
 
-      <section id="education" class="section">
-        <div class="section-header">
-          <div class="section-heading">
-            <p class="eyebrow">Education</p>
-            <h2>교육</h2>
-          </div>
-        </div>
-        <div class="experience-grid">
-          <article class="info-card">
-            <span class="info-card__label">SSAFY</span>
-            <h3>삼성 청년 SW 아카데미 10기</h3>
-            <p>Python, Django, Java, Spring Boot를 중심으로 백엔드 개발 역량을 쌓았고, 팀 프로젝트 4건을 수행하며 협업 경험을 강화했습니다.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="certifications" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Language & Certification</p>
-          <h2>어학 및 자격증</h2>
-        </div>
-        <div class="certification-layout">
-          <div class="section-panel certification-language">
-            <p class="eyebrow eyebrow--sub">Language</p>
-            <div class="certification-card certification-card--language">
-              <h3>영어</h3>
-              <dl class="certification-list">
-                <div><dt>어학종류</dt><dd>TOEIC SPEAKING</dd></div>
-                <div><dt>취득급수</dt><dd>Intermediate Mid 2 (120)</dd></div>
-                <div><dt>유효일자</dt><dd>2028-02-06</dd></div>
-              </dl>
+          <section id="certifications" class="content-section portfolio-panel" data-panel="certifications" hidden>
+            <h2 class="section-title">어학 및 자격증</h2>
+            <div class="section-content">
+              <div class="cert-grid">
+                <article class="cert-item">
+                  <strong>TOEIC SPEAKING</strong>
+                  <span>Intermediate Mid 2 (120) · 2028-02-06</span>
+                </article>
+                <article class="cert-item">
+                  <strong>정보처리기사</strong>
+                  <span>2025-06-13 · 한국산업인력공단</span>
+                </article>
+                <article class="cert-item">
+                  <strong>SQLD</strong>
+                  <span>2023-12-15 · 한국데이터진흥원</span>
+                </article>
+                <article class="cert-item">
+                  <strong>데이터분석 준전문가(ADsP)</strong>
+                  <span>2025-06-13 · 한국데이터진흥원</span>
+                </article>
+                <article class="cert-item">
+                  <strong>컴퓨터활용능력 1급</strong>
+                  <span>2019-09-13 · 대한상공회의소</span>
+                </article>
+              </div>
             </div>
-          </div>
+          </section>
 
-          <div class="certification-grid">
-            <article class="info-card certification-card">
-              <h3>정보처리</h3>
-              <dl class="certification-list">
-                <div><dt>등급</dt><dd>기사</dd></div>
-                <div><dt>취득일</dt><dd>2025-06-13</dd></div>
-                <div><dt>발급처</dt><dd>한국산업인력공단</dd></div>
-              </dl>
-            </article>
-
-            <article class="info-card certification-card">
-              <h3>SQLD</h3>
-              <dl class="certification-list">
-                <div><dt>등급</dt><dd>개발자</dd></div>
-                <div><dt>취득일</dt><dd>2023-12-15</dd></div>
-                <div><dt>발급처</dt><dd>한국데이터진흥원</dd></div>
-              </dl>
-            </article>
-
-            <article class="info-card certification-card">
-              <h3>데이터분석 준전문가(ADsP)</h3>
-              <dl class="certification-list">
-                <div><dt>등급</dt><dd>Professional</dd></div>
-                <div><dt>취득일</dt><dd>2025-06-13</dd></div>
-                <div><dt>발급처</dt><dd>한국데이터진흥원</dd></div>
-              </dl>
-            </article>
-
-            <article class="info-card certification-card">
-              <h3>컴퓨터활용능력</h3>
-              <dl class="certification-list">
-                <div><dt>등급</dt><dd>1급</dd></div>
-                <div><dt>취득일</dt><dd>2019-09-13</dd></div>
-                <div><dt>발급처</dt><dd>대한상공회의소</dd></div>
-              </dl>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="skills" class="section skills-section">
-        <div class="section-heading">
-          <p class="eyebrow">Skills</p>
-          <h2>기술 스택</h2>
-        </div>
-        <div class="skills-grid">
-          <article class="info-card skill-card">
-            <h3>Languages</h3>
-            <ul class="skill-chip-list">
-              <li class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></li>
-              <li class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><span>Java</span></li>
-              <li class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></li>
-              <li class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL"><span>SQL</span></li>
-            </ul>
-          </article>
-          <article class="info-card skill-card">
-            <h3>Backend</h3>
-            <ul class="skill-chip-list">
-              <li class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot"><span>Spring Boot</span></li>
-              <li class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django"><span>Django</span></li>
-              <li class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI"><span>FastAPI</span></li>
-              <li class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg" alt="REST API"><span>REST API</span></li>
-            </ul>
-          </article>
-          <article class="info-card skill-card">
-            <h3>Data</h3>
-            <ul class="skill-chip-list">
-              <li class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><span>MySQL</span></li>
-              <li class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite"><span>SQLite</span></li>
-              <li class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Data Collection"><span>Data Collection</span></li>
-              <li class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" alt="Visualization"><span>Visualization</span></li>
-            </ul>
-          </article>
-          <article class="info-card skill-card">
-            <h3>Collaboration</h3>
-            <ul class="skill-chip-list">
-              <li class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"><span>GitHub</span></li>
-              <li class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg" alt="Notion"><span>Notion</span></li>
-              <li class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="Jira"><span>Jira</span></li>
-              <li class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="QA Checklist"><span>QA Checklist</span></li>
-            </ul>
-          </article>
-        </div>
-      </section>
+          <section id="skills" class="content-section portfolio-panel" data-panel="skills" hidden>
+            <h2 class="section-title">기술</h2>
+            <div class="section-content">
+              <div class="skills-container">
+                <article class="skill-group">
+                  <h3>Languages</h3>
+                  <div class="skill-list">
+                    <span class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt=""><span>Java</span></span>
+                    <span class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt=""><span>Python</span></span>
+                    <span class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt=""><span>JavaScript</span></span>
+                    <span class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt=""><span>SQL</span></span>
+                  </div>
+                </article>
+                <article class="skill-group">
+                  <h3>Backend</h3>
+                  <div class="skill-list">
+                    <span class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt=""><span>Spring Boot</span></span>
+                    <span class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt=""><span>Django</span></span>
+                    <span class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt=""><span>FastAPI</span></span>
+                    <span class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg" alt=""><span>REST API</span></span>
+                  </div>
+                </article>
+                <article class="skill-group">
+                  <h3>Data</h3>
+                  <div class="skill-list">
+                    <span class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt=""><span>MySQL</span></span>
+                    <span class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt=""><span>SQLite</span></span>
+                    <span class="skill-item"><span class="skill-mark">DM</span><span>Data Modeling</span></span>
+                    <span class="skill-item"><span class="skill-mark">SQL</span><span>Query Optimization</span></span>
+                  </div>
+                </article>
+                <article class="skill-group">
+                  <h3>System & Operation</h3>
+                  <div class="skill-list">
+                    <span class="skill-item"><span class="skill-mark">MES</span><span>MES</span></span>
+                    <span class="skill-item"><span class="skill-mark">ERP</span><span>ERP Domain</span></span>
+                    <span class="skill-item"><span class="skill-mark">SSE</span><span>SSE</span></span>
+                    <span class="skill-item"><span class="skill-mark">MT</span><span>Multi-tenant</span></span>
+                  </div>
+                </article>
+                <article class="skill-group">
+                  <h3>Collaboration</h3>
+                  <div class="skill-list">
+                    <span class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt=""><span>GitHub</span></span>
+                    <span class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg" alt=""><span>Notion</span></span>
+                    <span class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt=""><span>Jira</span></span>
+                    <span class="skill-item"><span class="skill-mark">QA</span><span>QA Checklist</span></span>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <footer class="site-footer">
+              <p>© 2026. 엄예진 All rights reserved.</p>
+            </footer>
+          </section>
+        </main>
+      </div>
     </div>
-  </main>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navLinks = document.querySelectorAll('.side-nav a');
+      const panels = document.querySelectorAll('.portfolio-panel');
+      const scrollContainer = document.querySelector('.main-content');
+      const terminalContainer = document.querySelector('.terminal-container');
+      const panelOrder = Array.from(panels).map((panel) => panel.id);
+      let activePanelId = 'about';
+      let lastWheelSwitchAt = 0;
+
+      function showPanel(panelId, shouldUpdateHash = true) {
+        const targetPanel = document.getElementById(panelId) || document.getElementById('about');
+        if (!targetPanel) return;
+        activePanelId = targetPanel.id;
+
+        panels.forEach((panel) => {
+          const isActive = panel === targetPanel;
+          panel.hidden = !isActive;
+          panel.classList.toggle('active', isActive);
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.toggle('active', link.getAttribute('href') === `#${targetPanel.id}`);
+        });
+
+        scrollContainer.scrollTo({ top: 0, behavior: 'auto' });
+
+        if (shouldUpdateHash) {
+          history.replaceState(null, '', `#${targetPanel.id}`);
+        }
+      }
+
+      function movePanel(direction) {
+        const currentIndex = panelOrder.indexOf(activePanelId);
+        const nextIndex = currentIndex + direction;
+        if (nextIndex < 0 || nextIndex >= panelOrder.length) return;
+        showPanel(panelOrder[nextIndex]);
+      }
+
+      terminalContainer.addEventListener('wheel', (event) => {
+        const now = Date.now();
+        const isDown = event.deltaY > 0;
+        const isUp = event.deltaY < 0;
+        if (!isDown && !isUp) return;
+
+        const maxScroll = scrollContainer.scrollHeight - scrollContainer.clientHeight;
+        const shouldScrollInside = maxScroll > 48;
+        const atTop = scrollContainer.scrollTop <= 1;
+        const atBottom = scrollContainer.scrollTop >= maxScroll - 1;
+
+        if (shouldScrollInside && ((isDown && !atBottom) || (isUp && !atTop))) {
+          event.preventDefault();
+          scrollContainer.scrollTop += event.deltaY;
+          return;
+        }
+
+        event.preventDefault();
+        if (now - lastWheelSwitchAt < 420) return;
+        lastWheelSwitchAt = now;
+        movePanel(isDown ? 1 : -1);
+      }, { passive: false });
+
+      navLinks.forEach((link) => {
+        link.addEventListener('click', (event) => {
+          event.preventDefault();
+          showPanel(link.getAttribute('href').slice(1));
+        });
+      });
+
+      window.addEventListener('hashchange', () => {
+        showPanel((window.location.hash || '#about').slice(1), false);
+      });
+
+      showPanel((window.location.hash || '#about').slice(1), false);
+    });
+  </script>
 </body>
 </html>
