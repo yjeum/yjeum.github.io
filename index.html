@@ -17,7 +17,7 @@
         <span class="terminal-dot yellow"></span>
         <span class="terminal-dot green"></span>
       </div>
-      <p class="terminal-title">yjeum.portfolio</p>
+      <p class="terminal-title">엄예진 Portfolio</p>
     </header>
 
     <div class="terminal-content">
@@ -37,12 +37,12 @@
           <section id="about" class="hero-section portfolio-panel active" data-panel="about">
             <div class="hero-content">
               <div class="hero-text">
-                <p class="eyebrow">About</p>
-                <h1>업무 흐름을 데이터 구조로 연결합니다</h1>
-                <p class="hero-role">Backend Developer</p>
+                <p class="eyebrow">Backend Developer</p>
+                <h1>엄예진</h1>
+                <p class="hero-role">업무 흐름을 데이터 구조로 풀어내는 백엔드 개발자</p>
                 <p class="hero-description">
-                  제조 현장에서 생산, 재고, 품질, 영업, 출하 데이터가 이어지는 과정을 분석하고
-                  운영 환경에서 신뢰할 수 있는 백엔드 시스템으로 개선해왔습니다.
+                  요구사항을 그대로 구현하기보다 실제 운영 흐름을 확인하고,<br>
+                  성능과 정합성이 오래 유지되는 서버 구조를 만듭니다.
                 </p>
               </div>
               <div class="hero-image">
@@ -52,19 +52,16 @@
               </div>
               <div class="about-points">
                 <article>
-                  <span>01</span>
-                  <strong>업무 흐름 이해</strong>
-                  <p>부서와 공정 사이에서 데이터가 어떻게 연결되는지 먼저 확인합니다.</p>
+                  <strong>서버 로직을 구조화합니다</strong>
+                  <p>처리 순서, 상태 전이, 예외 조건을 서버 로직 안에서 명확하게 분리합니다.</p>
                 </article>
                 <article>
-                  <span>02</span>
-                  <strong>데이터 정합성</strong>
-                  <p>마감, 이력, Lot, 상태 변경이 운영 중에도 일관되게 남도록 설계합니다.</p>
+                  <strong>데이터 정합성을 지킵니다</strong>
+                  <p>트랜잭션과 검증 로직으로 이력, 상태, 마감 데이터의 불일치를 줄입니다.</p>
                 </article>
                 <article>
-                  <span>03</span>
-                  <strong>운영 가능한 개선</strong>
-                  <p>현장 예외와 실제 사용 방식을 반영해 유지되는 구조를 만듭니다.</p>
+                  <strong>운영 성능을 개선합니다</strong>
+                  <p>반복 계산을 줄이고 집계·조회 구조를 개선해 응답 속도를 안정화합니다.</p>
                 </article>
               </div>
             </div>
@@ -74,83 +71,104 @@
             <h2 class="section-title">경력</h2>
             <div class="section-content">
               <article class="timeline-item">
+                <div class="timeline-years" aria-hidden="true">
+                  <span>2025</span>
+                </div>
                 <div class="timeline-header">
                   <div>
                     <h3>(주)비지언스</h3>
-                    <p class="position">Backend Developer / MES & 스마트팩토리 구축 및 고도화</p>
                   </div>
-                  <span class="period">2025.01 ~ 재직중 · 총 1년 5개월</span>
+                  <span class="period">2025.01 ~ 재직중</span>
                 </div>
-                <p class="description">
-                  MES 시스템 개발과 운영을 담당하며 생산, 재고, 품질, 영업, 출하로 이어지는
-                  업무 데이터 흐름 설계와 시스템 구조 개선을 수행하고 있습니다.
-                </p>
+                <div class="experience-highlights" aria-label="주요 경력 요약">
+                  <div>
+                    <span>Role</span>
+                    <strong>Backend Developer</strong>
+                  </div>
+                  <div>
+                    <span>Domain</span>
+                    <strong>MES · 스마트팩토리</strong>
+                  </div>
+                  <div class="stack-card">
+                    <span>Stack</span>
+                    <strong class="experience-stack">
+                      <span class="stack-tech">Java<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt=""></span>
+                      <span class="stack-tech">Spring<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt=""></span>
+                    </strong>
+                  </div>
+                </div>
                 <ul class="detail-list">
-                  <li>MES 및 스마트팩토리 시스템 개발 및 운영</li>
-                  <li>월 마감 및 집계 구조 개선을 통한 조회 성능 최적화</li>
-                  <li>RFID 기반 생산 이력 관리와 예외 처리 구조 설계</li>
-                  <li>고객사별 업무 방식에 맞춘 LOT, 입고, 출하 로직 구현</li>
-                  <li>운영 환경에서 발생하는 데이터 정합성 문제 분석 및 개선</li>
+                  <li>MES 및 스마트팩토리 시스템의 백엔드 API 개발과 운영 유지보수 담당</li>
+                  <li>생산, 재고, 품질, 영업, 출하 등 주요 업무 모듈의 데이터 처리 로직 구현</li>
+                  <li>조회, 저장, 상태 변경, 이력 관리에 필요한 서버 로직과 검증 로직 개발</li>
+                  <li>운영 중 발생하는 데이터 불일치와 업무 예외를 분석해 로직 기준 정비</li>
+                  <li>다수 제조 프로젝트에서 고객사별 업무 방식에 맞춘 기능 개선 및 고도화 수행</li>
                 </ul>
               </article>
             </div>
           </section>
 
           <section id="projects" class="content-section portfolio-panel" data-panel="projects" hidden>
-            <h2 class="section-title">프로젝트</h2>
+            <div class="section-heading-row">
+              <h2 class="section-title">프로젝트</h2>
+              <div class="project-pager" aria-label="프로젝트 페이지">
+                <button type="button" class="active" data-project-page="1" aria-label="프로젝트 1페이지">1</button>
+                <button type="button" data-project-page="2" aria-label="프로젝트 2페이지">2</button>
+              </div>
+            </div>
             <div class="section-content">
-              <div class="project-stack">
-                <article class="project-card project-card--open">
-                  <div class="project-body">
-                    <p class="project-kicker">Manufacturing Data</p>
-                    <h3>전자제품 제조 운영 데이터 고도화</h3>
-                    <p class="project-meta">비지언스 · 제조업 고도화</p>
-                    <p class="project-desc">
-                      생산, 재고, 영업, 품질, 출하 데이터 흐름을 개선하고 월 마감 기반 집계 구조를 정비했습니다.
-                    </p>
-                    <div class="impact-grid">
-                      <div><strong>6초+</strong><span>기존 조회 응답</span></div>
-                      <div><strong>1초 이내</strong><span>개선 후 응답</span></div>
-                      <div><strong>월 마감</strong><span>누적 재계산 제거</span></div>
-                    </div>
-                    <div class="case-grid">
-                      <article>
-                        <span>Case 1</span>
-                        <h4>월 마감 기반 집계 구조 개선</h4>
-                        <p>매 조회마다 과거 데이터를 다시 계산하던 구조를 월 단위 마감 데이터 기반으로 변경했습니다.</p>
-                      </article>
-                      <article>
-                        <span>Case 2</span>
-                        <h4>출하 지시와 실제 출하 분리</h4>
-                        <p>영업 업무 흐름은 유지하면서 품질 검사와 재고 이력 기준이 흔들리지 않도록 단계를 분리했습니다.</p>
-                      </article>
-                    </div>
-                  </div>
-                </article>
-
+              <div class="project-split active" data-project-page-panel="1">
                 <article class="project-card">
-                  <div class="project-body">
-                    <p class="project-kicker">MES / RFID</p>
-                    <h3>생산·재고·품질·출하 데이터 흐름 개선</h3>
-                    <p class="project-meta">비지언스 · 2025.06 ~ 2025.12</p>
-                    <p class="project-desc">
-                      식품 제조 공장의 영업, 구매, 생산, 품질, 출하 과정을 하나의 업무 흐름으로 연결했습니다.
-                    </p>
-                    <div class="project-tags">
-                      <span>Java</span>
-                      <span>Spring Boot</span>
-                      <span>MySQL</span>
-                      <span>REST API</span>
-                      <span>SSE</span>
-                      <span>RFID</span>
-                    </div>
-                    <ul class="detail-list compact">
-                      <li>RFID 이벤트와 SSE 도입으로 상태 반영 시간 1초 이내 단축</li>
-                      <li>폴링 제거로 불필요 요청 약 60% 감소</li>
-                      <li>수기 기록과 데이터 불일치로 인한 보정 작업 약 90% 이상 감소</li>
-                      <li>30건 이상의 현장 예외 시나리오를 반영해 운영 안정성 확보</li>
-                    </ul>
+                  <p class="project-kicker">Project 01</p>
+                  <div class="project-cover">
+                    <img src="assets/project-electronics-mes.png" alt="전자부품 제조 MES 프로젝트 이미지">
                   </div>
+                  <h3>전자부품 제조 MES 고도화</h3>
+                  <p class="project-meta">전자부품 제조회사 · MES</p>
+                  <p class="project-desc">
+                    생산, 재고, 품질, 영업, 출하로 이어지는 운영 데이터 흐름을 정비하고
+                    월 마감 기반 집계 구조를 개선한 프로젝트입니다.
+                  </p>
+                  <button class="readme-button" type="button" data-modal-target="project-modal-1">README</button>
+                </article>
+                <article class="project-card">
+                  <p class="project-kicker">Project 02</p>
+                  <div class="project-cover">
+                    <img src="assets/project-food-mes.png" alt="식품업 MES 프로젝트 이미지">
+                  </div>
+                  <h3>식품업 MES 구축</h3>
+                  <p class="project-meta">식품 제조사 · MES</p>
+                  <p class="project-desc">
+                    RFID 기반 생산 이력과 LOT 관리 기준을 실제 공정 흐름에 맞춰 정리하고,
+                    품질 검사와 입출고 상태 전이를 구현한 프로젝트입니다.
+                  </p>
+                  <button class="readme-button" type="button" data-modal-target="project-modal-2">README</button>
+                </article>
+              </div>
+              <div class="project-split" data-project-page-panel="2" hidden>
+                <article class="project-card project-card--pending">
+                  <p class="project-kicker">Project 03</p>
+                  <div class="project-cover project-cover--pending">
+                    <span>Coming Soon</span>
+                  </div>
+                  <h3>프로젝트 3</h3>
+                  <p class="project-meta">준비중</p>
+                  <p class="project-desc">
+                    상세 내용은 추후 정리 예정입니다. 프로젝트 개요와 README를 준비하고 있습니다.
+                  </p>
+                  <button class="readme-button" type="button" disabled>README 준비중</button>
+                </article>
+                <article class="project-card project-card--pending">
+                  <p class="project-kicker">Project 04</p>
+                  <div class="project-cover project-cover--pending">
+                    <span>Coming Soon</span>
+                  </div>
+                  <h3>프로젝트 4</h3>
+                  <p class="project-meta">준비중</p>
+                  <p class="project-desc">
+                    상세 내용은 추후 정리 예정입니다. 프로젝트 개요와 README를 준비하고 있습니다.
+                  </p>
+                  <button class="readme-button" type="button" disabled>README 준비중</button>
                 </article>
               </div>
             </div>
@@ -175,28 +193,88 @@
           </section>
 
           <section id="certifications" class="content-section portfolio-panel" data-panel="certifications" hidden>
-            <h2 class="section-title">어학 및 자격증</h2>
+            <h2 class="section-title">자격증</h2>
             <div class="section-content">
               <div class="cert-grid">
                 <article class="cert-item">
-                  <strong>TOEIC SPEAKING</strong>
-                  <span>Intermediate Mid 2 (120) · 2028-02-06</span>
+                  <div class="cert-head">
+                    <span class="cert-type">어학</span>
+                    <strong>TOEIC SPEAKING</strong>
+                  </div>
+                  <dl class="cert-info">
+                    <div>
+                      <dt>성적</dt>
+                      <dd>Intermediate Mid 2 (120)</dd>
+                    </div>
+                    <div>
+                      <dt>유효기간</dt>
+                      <dd>2028-02-06</dd>
+                    </div>
+                  </dl>
                 </article>
                 <article class="cert-item">
-                  <strong>정보처리기사</strong>
-                  <span>2025-06-13 · 한국산업인력공단</span>
+                  <div class="cert-head">
+                    <span class="cert-type">국가기술자격</span>
+                    <strong>정보처리기사</strong>
+                  </div>
+                  <dl class="cert-info">
+                    <div>
+                      <dt>취득일</dt>
+                      <dd>2025-06-13</dd>
+                    </div>
+                    <div>
+                      <dt>발급기관</dt>
+                      <dd>한국산업인력공단</dd>
+                    </div>
+                  </dl>
                 </article>
                 <article class="cert-item">
-                  <strong>SQLD</strong>
-                  <span>2023-12-15 · 한국데이터진흥원</span>
+                  <div class="cert-head">
+                    <span class="cert-type">데이터</span>
+                    <strong>SQLD</strong>
+                  </div>
+                  <dl class="cert-info">
+                    <div>
+                      <dt>취득일</dt>
+                      <dd>2023-12-15</dd>
+                    </div>
+                    <div>
+                      <dt>발급기관</dt>
+                      <dd>한국데이터진흥원</dd>
+                    </div>
+                  </dl>
                 </article>
                 <article class="cert-item">
-                  <strong>데이터분석 준전문가(ADsP)</strong>
-                  <span>2025-06-13 · 한국데이터진흥원</span>
+                  <div class="cert-head">
+                    <span class="cert-type">데이터</span>
+                    <strong>데이터분석 준전문가(ADsP)</strong>
+                  </div>
+                  <dl class="cert-info">
+                    <div>
+                      <dt>취득일</dt>
+                      <dd>2025-06-13</dd>
+                    </div>
+                    <div>
+                      <dt>발급기관</dt>
+                      <dd>한국데이터진흥원</dd>
+                    </div>
+                  </dl>
                 </article>
                 <article class="cert-item">
-                  <strong>컴퓨터활용능력 1급</strong>
-                  <span>2019-09-13 · 대한상공회의소</span>
+                  <div class="cert-head">
+                    <span class="cert-type">사무</span>
+                    <strong>컴퓨터활용능력 1급</strong>
+                  </div>
+                  <dl class="cert-info">
+                    <div>
+                      <dt>취득일</dt>
+                      <dd>2019-09-13</dd>
+                    </div>
+                    <div>
+                      <dt>발급기관</dt>
+                      <dd>대한상공회의소</dd>
+                    </div>
+                  </dl>
                 </article>
               </div>
             </div>
@@ -207,15 +285,6 @@
             <div class="section-content">
               <div class="skills-container">
                 <article class="skill-group">
-                  <h3>Languages</h3>
-                  <div class="skill-list">
-                    <span class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt=""><span>Java</span></span>
-                    <span class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt=""><span>Python</span></span>
-                    <span class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt=""><span>JavaScript</span></span>
-                    <span class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt=""><span>SQL</span></span>
-                  </div>
-                </article>
-                <article class="skill-group">
                   <h3>Backend</h3>
                   <div class="skill-list">
                     <span class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt=""><span>Spring Boot</span></span>
@@ -225,21 +294,28 @@
                   </div>
                 </article>
                 <article class="skill-group">
+                  <h3>Languages</h3>
+                  <div class="skill-list">
+                    <span class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt=""><span>Java</span></span>
+                    <span class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt=""><span>Python</span></span>
+                    <span class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt=""><span>JavaScript</span></span>
+                    <span class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt=""><span>SQL</span></span>
+                  </div>
+                </article>
+                <article class="skill-group">
                   <h3>Data</h3>
                   <div class="skill-list">
                     <span class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt=""><span>MySQL</span></span>
                     <span class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt=""><span>SQLite</span></span>
-                    <span class="skill-item"><span class="skill-mark">DM</span><span>Data Modeling</span></span>
-                    <span class="skill-item"><span class="skill-mark">SQL</span><span>Query Optimization</span></span>
                   </div>
                 </article>
                 <article class="skill-group">
                   <h3>System & Operation</h3>
                   <div class="skill-list">
-                    <span class="skill-item"><span class="skill-mark">MES</span><span>MES</span></span>
-                    <span class="skill-item"><span class="skill-mark">ERP</span><span>ERP Domain</span></span>
-                    <span class="skill-item"><span class="skill-mark">SSE</span><span>SSE</span></span>
-                    <span class="skill-item"><span class="skill-mark">MT</span><span>Multi-tenant</span></span>
+                    <span class="skill-item"><span class="skill-mark" aria-hidden="true">&lt;/&gt;</span><span>MES</span></span>
+                    <span class="skill-item"><span class="skill-mark" aria-hidden="true">&lt;/&gt;</span><span>ERP Domain</span></span>
+                    <span class="skill-item"><span class="skill-mark" aria-hidden="true">&lt;/&gt;</span><span>SSE</span></span>
+                    <span class="skill-item"><span class="skill-mark" aria-hidden="true">&lt;/&gt;</span><span>Multi-tenant</span></span>
                   </div>
                 </article>
                 <article class="skill-group">
@@ -248,19 +324,101 @@
                     <span class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt=""><span>GitHub</span></span>
                     <span class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg" alt=""><span>Notion</span></span>
                     <span class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt=""><span>Jira</span></span>
-                    <span class="skill-item"><span class="skill-mark">QA</span><span>QA Checklist</span></span>
                   </div>
                 </article>
               </div>
             </div>
-            <footer class="site-footer">
-              <p>© 2026. 엄예진 All rights reserved.</p>
-            </footer>
           </section>
         </main>
       </div>
     </div>
   </div>
+
+  <dialog class="project-modal" id="project-modal-1">
+    <div class="modal-panel">
+      <div class="modal-header">
+        <div>
+          <p class="project-kicker">README · Project 01</p>
+          <h3>전자부품 제조 MES 고도화</h3>
+        </div>
+        <button class="modal-close" type="button" aria-label="닫기" data-modal-close>×</button>
+      </div>
+      <div class="modal-body">
+        <section>
+          <h4>개요</h4>
+          <p>전자부품 제조 운영 과정에서 생산, 재고, 품질, 영업, 출하 데이터가 이어지는 흐름을 정리하고 서버 집계 구조를 개선한 프로젝트입니다.</p>
+        </section>
+        <section class="modal-grid">
+          <article>
+            <h4>역할</h4>
+            <ul>
+              <li>서버 로직 및 데이터 흐름 개선</li>
+              <li>집계 구조와 조회 성능 개선</li>
+            </ul>
+          </article>
+          <article>
+            <h4>기술</h4>
+            <ul>
+              <li>Java, Spring Boot, MySQL</li>
+              <li>MES, 월 마감, 집계 데이터</li>
+            </ul>
+          </article>
+        </section>
+        <section>
+          <h4>README 작성 뼈대</h4>
+          <ul>
+            <li>문제 상황: 누적 데이터 증가로 인한 조회 성능 저하</li>
+            <li>해결 방식: 월 마감 기준 집계 결과 저장 및 재계산 제거</li>
+            <li>검증 포인트: 마감 이후 데이터 변경이 집계 결과에 미치는 영향 차단</li>
+            <li>결과: 주요 조회 응답 시간 개선</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="project-modal" id="project-modal-2">
+    <div class="modal-panel">
+      <div class="modal-header">
+        <div>
+          <p class="project-kicker">README · Project 02</p>
+          <h3>식품업 MES 구축</h3>
+        </div>
+        <button class="modal-close" type="button" aria-label="닫기" data-modal-close>×</button>
+      </div>
+      <div class="modal-body">
+        <section>
+          <h4>개요</h4>
+          <p>식품 제조 공정에서 RFID 기반 생산 이력, LOT 관리, 품질 검사, 입출고 상태 변경 흐름을 실제 운영 방식에 맞춰 구현한 프로젝트입니다.</p>
+        </section>
+        <section class="modal-grid">
+          <article>
+            <h4>역할</h4>
+            <ul>
+              <li>RFID 생산 이력 서버 로직 구현</li>
+              <li>LOT 기준과 품질 검사 흐름 정리</li>
+            </ul>
+          </article>
+          <article>
+            <h4>기술</h4>
+            <ul>
+              <li>Java, Spring Boot, RFID</li>
+              <li>LOT, 품질 검사, 상태 전이</li>
+            </ul>
+          </article>
+        </section>
+        <section>
+          <h4>README 작성 뼈대</h4>
+          <ul>
+            <li>문제 상황: RFID 수신 순서와 실제 공정 흐름의 차이</li>
+            <li>해결 방식: 순서 변경, 품목 전환 등 예외 시나리오를 서버 로직에 반영</li>
+            <li>검증 포인트: 자재와 상품의 서로 다른 LOT 관리 기준 분리</li>
+            <li>결과: 생산 이력과 품질 검사 흐름의 운영 안정성 확보</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </dialog>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -268,6 +426,10 @@
       const panels = document.querySelectorAll('.portfolio-panel');
       const scrollContainer = document.querySelector('.main-content');
       const terminalContainer = document.querySelector('.terminal-container');
+      const modalOpenButtons = document.querySelectorAll('[data-modal-target]');
+      const modalCloseButtons = document.querySelectorAll('[data-modal-close]');
+      const projectPageButtons = document.querySelectorAll('[data-project-page]');
+      const projectPagePanels = document.querySelectorAll('[data-project-page-panel]');
       const panelOrder = Array.from(panels).map((panel) => panel.id);
       let activePanelId = 'about';
       let lastWheelSwitchAt = 0;
@@ -286,6 +448,8 @@
         navLinks.forEach((link) => {
           link.classList.toggle('active', link.getAttribute('href') === `#${targetPanel.id}`);
         });
+
+        scrollContainer.classList.toggle('no-scrollbar', targetPanel.id === 'projects');
 
         scrollContainer.scrollTo({ top: 0, behavior: 'auto' });
 
@@ -333,6 +497,39 @@
 
       window.addEventListener('hashchange', () => {
         showPanel((window.location.hash || '#about').slice(1), false);
+      });
+
+      modalOpenButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const modal = document.getElementById(button.dataset.modalTarget);
+          if (modal) modal.showModal();
+        });
+      });
+
+      modalCloseButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          button.closest('dialog')?.close();
+        });
+      });
+
+      document.querySelectorAll('.project-modal').forEach((modal) => {
+        modal.addEventListener('click', (event) => {
+          if (event.target === modal) modal.close();
+        });
+      });
+
+      projectPageButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const page = button.dataset.projectPage;
+          projectPageButtons.forEach((pager) => {
+            pager.classList.toggle('active', pager === button);
+          });
+          projectPagePanels.forEach((panel) => {
+            const isActive = panel.dataset.projectPagePanel === page;
+            panel.hidden = !isActive;
+            panel.classList.toggle('active', isActive);
+          });
+        });
       });
 
       showPanel((window.location.hash || '#about').slice(1), false);
